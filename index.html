@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/ico.ico" type="image/x-icon">
+
+    <!-- Primary Meta Tags -->
+    <meta property="url" content="https://misfitsdev.xyzindex.html" />
+    <meta property="type" content="website" />
+    <meta property="title" content="MisfitsDEV" />
+    <meta property="description" content="A zone for misfits" />
+    <meta property="image"
+        content="https://www.anime-planet.com/images/anime/screenshots/the-misfit-of-demon-king-academy-14082-1.jpg" />
+    <meta name="Keywords" content="moding, cracking, apk mod, moding tut, tut, reverse engineering">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:url" content="https://misfitsdev.xyz/index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MisfitsDEV" />
+    <meta property="og:description" content="A zone for misfits." />
+    <meta property="og:image"
+        content="https://www.anime-planet.com/images/anime/screenshots/the-misfit-of-demon-king-academy-14082-1.jpg" />
+    <meta property="og:fb:app_id" content="636837923919747" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://misfitsdev.xyz/index.html">
+    <meta property="twitter:title" content="MisfitsDEV">
+    <meta property="twitter:description" content="A zone for misfits.">
+    <meta property="og:Keywords" content="moding, cracking, apk mod, moding tut, tut, reverse engineering">
+    <meta property="twitter:image"
+        content="https://www.anime-planet.com/images/anime/screenshots/the-misfit-of-demon-king-academy-14082-1.jpg">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>MisfitsDEV </title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+
+    <header class="profile container">
+        <div class="profile__container grid" style="position: relative; box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;">
+            <h4>Ads Regex 2.0 </h4> 
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+        </div>
+    </header>
+
+    <header class="profile container">
+        <!-- Theme button -->
+        <div class="profile__container grid">
+            <div class="profile__data">
+                <span>Regex 1</span>
+                <h3 class="profile__profession key1">Search</h3>
+                <p id="rk-1" onclick="copyToClipboard('#rk-1')" class="profile__profession key">
+                    (\.method\s(public|private|static)\s\b(?!\babstract|native\b)(.*)?loadAd\(.*\)V)</p>
+
+            </div>
+            <div class="profile__data">
+                <h3 class="profile__profession key1">Replace</h3>
+                <p id="rv-1" onclick="copyToClipboard('#rv-1')" class="profile__profession key">$1 <br><br>
+                    return-void</p>
+
+            </div>
+    </header>
+
+    <header class="profile container">
+        <div class="profile__container grid">
+            <div class="profile__data">
+                <span>Regex 2</span>
+                <h3 class="profile__profession key1">Search</h3>
+                <p id="rk-2" onclick="copyToClipboard('#rk-2')" class="profile__profession key">
+                    (\.method\s(public|private|static)\s\b(?!\babstract|native\b)(.*)?loadAd\(.*\)Z)
+
+                </p>
+
+            </div>
+            <div class="profile__data">
+                <h3 class="profile__profession key1">Replace</h3>
+                <p id="rv-2" onclick="copyToClipboard('#rv-2')" class="profile__profession key">
+                    $1 <br> <br>
+
+                    const/4 v0, 0x0 <br> <br>
+
+                    return v0</p>
+
+            </div>
+    </header>
+
+    <header class="profile container">
+        <div class="profile__container grid">
+            <div class="profile__data">
+                <span>Regex 3</span>
+                <h3 class="profile__profession key1">Search</h3>
+                <p id="rk-3" onclick="copyToClipboard('#rk-3')" class="profile__profession key">
+                    (invoke.*loadAd\(.*\)[VZ])
+                </p>
+
+            </div>
+            <div class="profile__data">
+                <h3 class="profile__profession key1">Replace</h3>
+                <p id="rv-3" onclick="copyToClipboard('#rv-3')" class="profile__profession key">
+                    #$1
+                </p>
+
+            </div>
+    </header>
+
+    <header class="profile container">
+        <div class="profile__container grid">
+            <div class="profile__data">
+                <span>Regex 4</span>
+                <h3 class="profile__profession key1">Search</h3>
+                <p id="rk-4" onclick="copyToClipboard('#rk-4')" class="profile__profession key">
+                    (invoke.*gms.*\>(loadUrl|loadDataWithBaseURL|requestInterstitialAd|showInterstitial|showVideo|showAd|loadData|onAdClicked|onAdLoaded|isLoading|loadAds|AdLoader|AdRequest|AdListener|AdView).*V)
+                </p>
+
+            </div>
+            <div class="profile__data">
+                <h3 class="profile__profession key1">Replace</h3>
+                <p id="rv-4" onclick="copyToClipboard('#rv-4')" class="profile__profession key">
+                    #$1
+
+                </p>
+
+            </div>
+    </header>
+
+    <header class="profile container">
+        <div class="profile__container grid">
+            <div class="profile__data">
+                <span>Regex 5</span>
+                <h3 class="profile__profession key1">Search</h3>
+                <p id="rk-5" onclick="copyToClipboard('#rk-5')" class="profile__profession key">
+                    \"(http.*|//.*)(61\.145\.124\.238|\-ads\.|\.ad\.|\.ads\.|\.analytics\.localytics\.com|\.mobfox\.com|\.mp\.mydas\.mobi|\.plus1\.wapstart\.ru|\.scorecardresearch\.com|\.startappservice\.com|\/ad\.|\/ads|ad\-mail|ad\.*\_logging|ad\.api\.kaffnet\.com|adc3\-launch|adcolony|adinformation|adkmob|admax|admob|admost|adsafeprotected|adservice|adtag|advert|adwhirl|adz\.wattpad\.com|alta\.eqmob\.com|amazon\-*ads|amazon\.*ads|amobee|analytics|applovin|applvn|appnext|appodeal|appsdt|appsflyer|burstly|cauly|cloudfront|com\.google\.android\.gms\.ads\.identifier\.service\.START|crashlytics|crispwireless|doubleclick|dsp\.batmobil\.net|duapps|dummy|flurry|gad|getads|google\.com\/dfp|googleAds|googleads|googleapis\.*\.ad\-*|googlesyndication|googletagmanager|greystripe|gstatic|inmobi|inneractive|jumptag|live\.chartboost\.com|madnet|millennialmedia|moatads|mopub|native\_ads|pagead|pubnative|smaato|supersonicads|tapas|tapjoy|unityads|vungle|zucks).*\"
+                </p>
+
+            </div>
+            <div class="profile__data">
+                <h3 class="profile__profession key1">Replace</h3>
+                <p id="rv-5" onclick="copyToClipboard('#rv-5')" class="profile__profession key">
+                    "="
+                </p>
+
+            </div>
+    </header>
+
+
+
+
+    <!--=============== MAIN ===============-->
+
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+        <span class="footer__copy">
+            &#169; MisfitsDev. All rigths reserved || <a href="/privacy.html" style="color: var(--text-color-light);">
+                Privacy & Policy </a>
+        </span>
+
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+    </script>
+
+</body>
+
+</html>
